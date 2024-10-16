@@ -25,7 +25,11 @@ function App() {
     <Flex direction="column" minH="100vh">
       <Box flex="1">
         <Container
-          maxW={pathname === "/" ? { base: "1000px", md: "1200px" } : "1000px"}
+          maxW={
+            pathname === "/"
+              ? { base: "600px", sm: "1000px", md: "1200px" }
+              : "1000px"
+          }
         >
           <Header />
           <Routes>
