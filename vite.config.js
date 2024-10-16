@@ -8,7 +8,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       "/api": {
-        target: "https://settyl-server.vercel.app/",
+        target: "https://settyl-server.vercel.app",
         changeOrigin: true,
         secure: false,
       },
