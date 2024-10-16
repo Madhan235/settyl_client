@@ -25,7 +25,9 @@ export const SocketContextProvider = ({ children }) => {
   const user = useRecoilValue(userAtom);
 
   useEffect(() => {
-    const socket = io("https://settyl-server.vercel.app/", {
+    if (!user?._id) return;
+
+    const socket = io("https://settyl-server.vercel.app", {
       query: {
         userId: user?._id,
       },
