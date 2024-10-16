@@ -15,7 +15,7 @@ import { HiMiniBellSnooze } from "react-icons/hi2";
 import { FaUserFriends } from "react-icons/fa";
 import { Link as RouterLink } from "react-router-dom";
 import { FiLogOut } from "react-icons/fi";
-import useLogOut from "../hooks/useLogout";
+import useLogout from "../hooks/useLogout";
 import authScreenAtom from "../atoms/authAtom";
 import { BsFillChatQuoteFill } from "react-icons/bs";
 import { useState } from "react";
@@ -25,7 +25,7 @@ import { CloseIcon } from "@chakra-ui/icons";
 export default function Header() {
   const { colorMode, toggleColorMode } = useColorMode();
   const user = useRecoilValue(userAtom);
-  const logout = useLogOut();
+  const logout = useLogout();
   const setAuthScreen = useSetRecoilState(authScreenAtom);
   const [showFriends, setShowFriends] = useState(false);
 
