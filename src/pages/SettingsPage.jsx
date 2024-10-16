@@ -1,10 +1,10 @@
 import { Button, Text } from "@chakra-ui/react";
 import useShowToast from "../hooks/useShowToast";
-import useLogOut from "../hooks/useLogOut";
+import useLogout from "../hooks/useLogout";
 
 export default function SettingsPage() {
   const showToast = useShowToast();
-  const logout = useLogOut();
+  const logout = useLogout();
   const freezeAccount = async () => {
     if (!window.confirm("Are you sure you want to freeze your account")) return;
 
