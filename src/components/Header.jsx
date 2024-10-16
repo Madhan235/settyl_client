@@ -54,7 +54,8 @@ export default function Header() {
         <Link
           as={RouterLink}
           to={"/auth"}
-          onClick={() => setAuthScreen("login")} // Corrected typo
+          color={"white"}
+          onClick={() => setAuthScreen("login")}
         >
           Login
         </Link>
@@ -118,7 +119,8 @@ export default function Header() {
         <Link
           as={RouterLink}
           to={"/auth"}
-          onClick={() => setAuthScreen("signup")} // Corrected typo
+          onClick={() => setAuthScreen("signup")}
+          color={"white"}
         >
           Sign up
         </Link>
